@@ -14,7 +14,7 @@ def scrap(url):
     soup = BeautifulSoup(url_get.content,"html.parser")
     
     #Find the key to get the information
-    table = soup.find('table', attrs={'class':'table'}) 
+    table = soup.find('table', attrs={'class':'centerText newsTable2'}) 
     tr = table.find_all('tr') 
 
     temp = [] #initiating a tuple
